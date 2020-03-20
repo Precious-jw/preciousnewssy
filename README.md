@@ -1,2 +1,2 @@
-# Precious-Newwsy
+# Precious-Newssy
 My Personal Website
