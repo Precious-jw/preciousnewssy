@@ -9,8 +9,29 @@
 
     <title>Precious Newssy</title>
 </head>
-<body>
     
+<body>
+
+    <!--Side navigation-->
+
+    <div class="overlay" onclick="closeSideNav()"></div>
+    <div class="side-nav">
+        
+        <span class="close">
+            <i onclick="closeSideNav()">&times;</i>
+        </span>
+
+        <span class="side-menu-links" id="side-menu-links">
+            <a class="side-nav-link" id="link1" href="#home"><p>Home</p></a>
+            <a class="side-nav-link" id="link2" href="#about"><p>About</p></a>
+            <a class="side-nav-link" id="link3" href="#education"><p>Education</p></a>
+            <a class="side-nav-link" id="link4" href="#services"><p>Services</p></a>
+            <a class="side-nav-link" id="link5" href="#hire"><p>Hire Me</p></a>
+        </span>
+    </div>
+
+    <!--Side navigation end-->
+
     <div class="container" id="home">
         <header class="website-header" id="head">
             <span class="header-content" id="header-content">
@@ -21,69 +42,21 @@
                     </a>
                 </span>
 
-                <span class="head-content-2" id="head-content-2">
+                <span class="menu-links" id="menu-links">
                     <a class="navbar-link" id="link1" onclick="activate1()" href="#home"><p>Home</p></a>
                     <a class="navbar-link" id="link2" onclick="activate2()" href="#about"><p>About</p></a>
                     <a class="navbar-link" id="link3" onclick="activate3()" href="#education"><p>Education</p></a>
                     <a class="navbar-link" id="link4" onclick="activate4()" href="#services"><p>Services</p></a>
                     <a class="navbar-link" id="link5" onclick="activate5()" href="#hire"><p>Hire Me</p></a>
 
-                    <span class="nav-link-dropdown">
-                        <a class="navigate" id="navigate" onclick="dropDown()"><i class="fas fa-bars"></i></a>
-
-                        <span class="nav-links">
-                            <a class="nav-link" id="link1" onclick="activate1()" href="#home">Home</a>
-                            <a class="nav-link" id="link2" onclick="activate2()" href="#about">About</a>
-                            <a class="nav-link" id="link3" onclick="activate3()" href="#education">Education</a>
-                            <a class="nav-link" id="link4" onclick="activate4()" href="#services">Services</a>
-                            <a class="nav-link" id="link5" onclick="activate5()" href="#hire">Hire Me</a>
-                        </span>
-                    </span>
-                </span>
-
-                
-
-            </span>
-        </header>
-        
-        <!--Second Header-->
-
-        <header class="website-header-alt" id="head-alt">
-            <span class="header-content-alt" id="header-content-alt">
-
-                <span class="brand-name-alt">
-                    <a href="index.html" id="brand-alt">
-                        <strong>PRECIOUS NEWSSY</strong>
-                    </a>
-                </span>
-
-                <span class="head-content-2-alt" id="head-content-alt">
-                    <a class="navbar-link-alt" id="link1" onclick="activate1()" href="#home"><p>Home</p></a>
-                    <a class="navbar-link-alt" id="link2" onclick="activate2()" href="#about"><p>About</p></a>
-                    <a class="navbar-link-alt" id="link3" onclick="activate3()" href="#education"><p>Education</p></a>
-                    <a class="navbar-link-alt" id="link4" onclick="activate4()" href="#services"><p>Services</p></a>
-
-                    <span class="nav-link-dropdown">
-                        <a class="navigate" id="navigate" onclick="dropDown()"><i class="fas fa-bars"></i></a>
-
-                        <span class="nav-links">
-                            <a class="nav-link" id="link1" onclick="activate1()" href="#home">Home</a>
-                            <a class="nav-link" id="link2" onclick="activate2()" href="#about">About</a>
-                            <a class="nav-link" id="link3" onclick="activate3()" href="#education">Education</a>
-                            <a class="nav-link" id="link4" onclick="activate4()" href="#services">Services</a>
-                            <a class="nav-link" id="link5" onclick="activate5()" href="#hire">Hire Me</a>
-                        </span>
-                    </span>
+                        <span class="navigate" id="navigate"><i class="fas fa-bars" onclick="openSideNav()"></i></span>
                 </span>
 
             </span>
+
         </header>
-
         
-
-        <!--Second Header End-->
-
-        <div class="page-body" onclick="closeNav">
+        <div class="page-body" onclick="closeNav()">
             <div class="landing-body">
             
                         <p class="hi">Hello & Welcome!</p>
@@ -92,24 +65,28 @@
                             I Am <span class="name">Precious Newssy</span><span class="developer">A Web Developer</span><span class="programmer">A Programmer</span>
                         </span>
                         <span class="social-icons">
-                            <a href="https://web.facebook.com/profile.php?id=100018896417862" target="blank">
+                            <a href="https://web.facebook.com/profile.php?id=100018896417862" target="blank" class="fb">
                             <i class="fab fa-facebook-square"></i>
                             </a>
 
-                            <a href="https://twitter.com/PIfaka/" target="blank">
-                            <i class="fab fa-twitter"></i>
+                            <a href="https://twitter.com/PIfaka/" target="blank" class="twitter">
+                            <i class="fab fa-twitter light-blue"></i>
                             </a>
                             
-                            <a href="https://www.instagram.com/precious_jw/" target="blank">
+                            <a href="https://www.instagram.com/precious_jw/" target="blank" class="ig">
                             <i class="fab fa-instagram"></i>
                             </a>
 
-                            <a href="https://www.linkedin.com/in/precious-newssy-4b979919b/?clickid=Wao2Ta3OyxyORoBwUx0Mo3ERUknSOkUb1VR01A0&src=aff-lilpar&veh=aff_src%2Eaff-lilpar_c%2Epartners_pkw%2E123201_plc%2Eadgoal+GmbH_pcrid%2E449670_learning&irgwc=1&trk=aff_src%2Eaff-lilpar_c%2Epartners_pkw%2E123201_plc%2Eadgoal+GmbH_pcrid%2E449670_learning&originalSubdomain=ng" target="blank">
+                            <a href="https://www.linkedin.com/in/precious-newssy-4b979919b/?clickid=Wao2Ta3OyxyORoBwUx0Mo3ERUknSOkUb1VR01A0&src=aff-lilpar&veh=aff_src%2Eaff-lilpar_c%2Epartners_pkw%2E123201_plc%2Eadgoal+GmbH_pcrid%2E449670_learning&irgwc=1&trk=aff_src%2Eaff-lilpar_c%2Epartners_pkw%2E123201_plc%2Eadgoal+GmbH_pcrid%2E449670_learning&originalSubdomain=ng" target="blank" class="linkedin">
                             <i class="fab fa-linkedin-in"></i>
                             </a>
 
-                            <a href="mailto:ifakaprecious43@gmail.com?" target="blank">
+                            <a href="mailto:ifakaprecious43@gmail.com?" target="blank" class="email">
                             <i class="far fa-envelope"></i>
+                            </a>
+
+                            <a href="https://youtube.com" target="blank" class="youtube">
+                            <i class="fab fa-youtube red"></i>
                             </a>
                         </span>
 
@@ -129,15 +106,12 @@
             
 
         <div class="main-body" id="about">
-            
-            <div class="overlay">
-            </div>
 
             <div class="about">
                 <div class="about-body">
                     <h1 class="about-header headers">About Me</h1><br>
-                    <p class="about-text-lg">Hey there <br> </p>
-                    <p class="about-text">I'm Precious Newssy, a Web Developer, a Computer Programmer and a Gamer. I am passionate about my work and I try as much as possible to make sure that my clients are absolutely satisfied. I am the owner of <a class="petech" href="www.facebook.com/petech-gaming">Petech Gaming</a> Facebook Page. I am also a fan of sports (Soccer in particular). I am proficient in the following skills:
+                    <p class="about-text-lg">Hey there!<br> </p>
+                    <p class="about-text">I'm Precious Newssy, a Web Developer, a Computer Programmer and a Gamer. I'm passionate about working with computers and the internet. I am honest, trustworthy ,reliable and I try as much as possible to make sure that my clients are absolutely satisfied. I'm also a fan of Soccer and soccer games. I am proficient in the following skills:
                     </p>
                 </div>
 
@@ -171,9 +145,9 @@
 
                 <div class="education-text">
                     <span class="education-row-1 education-rows">
-                        <h2 class="text-head">
+                        <h3 class="text-head">
                             TERTIARY EDUCATION
-                        </h2>
+                        </h3>
                         <p class="text-body">
                             Started studing <strong>Information Technology</strong> at National Open University of Nigeria.
                         </p>
@@ -181,9 +155,9 @@
                     </span>
 
                     <span class="education-row-2 education-rows">
-                        <h2 class="text-head">
+                        <h3 class="text-head">
                             WEBSITE DEVELOPMENT
-                        </h2>
+                        </h3>
                         <p class="text-body">
                             Started learning <strong>Web Development</strong>.
                         </p>
@@ -191,9 +165,9 @@
                     </span>
 
                     <span class="education-row-3 education-rows">
-                        <h2 class="text-head">
+                        <h3 class="text-head">
                             COMPUTER PROGRAMMING
-                        </h2>
+                        </h3>
                         <p class="text-body">
                             Started learning <strong>Programming Languages</strong> which include javascript and php.
                         </p>
@@ -211,40 +185,75 @@
 
                 <div class="services-main">
                     <span class="services-row-1 services-rows">
-                        <h2 class="text-head">
-                            TERTIARY EDUCATION
-                        </h2>
-                        <p class="text-body">
-                            Started studing <strong>Information Technology</strong> at National Open University of Nigeria.
-                        </p>
-                        <h4 class="service-date">2018 - PRESENT</h4>
+                        <img src="images/responsive-web.jpg">
+                        <span class="right-content">
+                                <strong>RESPONSIVE WEB DESIGN</strong>
+                            <p class="text-body">
+                                I can create a website that will be <strong>Responsive</strong> on all type of devices.
+                            </p>
+                        </span>
                     </span>
 
                     <span class="services-row-2 services-rows">
-                        <h2 class="text-head">
-                            TERTIARY EDUCATION
-                        </h2>
-                        <p class="text-body">
-                            Started studing <strong>Information Technology</strong> at National Open University of Nigeria.
-                        </p>
-                        <h4 class="service-date">2018 - PRESENT</h4>
+                        <span class="right-content">
+                                <strong>Blog</strong>
+                            <p class="text-body">
+                                I can help you set up an <strong>Online Blog</strong> with minimal cost.
+                            </p>
+                        </span>
+
+                        <img src="images/perfect web1.png">
                     </span>
 
                     <span class="services-row-3 services-rows">
-                        <h2 class="text-head">
-                            TERTIARY EDUCATION
-                        </h2>
+                        <img src="images/portfolio.JPG">
+
+                        <span class="right-content">
+                                <strong>WEBSITE MODIFICATION</strong>
+                            <p class="text-body">
+                                If you are looking for a web developer to fix some issues or make some changes to your website, then I may be of help.
+                            </p>
+                        </span>
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="hire" id="hire">
+                <div class="hire-body">
+                    <h1 class="hire-header">Hire Me</h1><br>
+                    <h3 class="hire-sub">These are ways in which you can hire my services</h3>
+                </div>
+
+                <div class="hire-main">
+                    <span class="hire-rows">
+                        <span>FIVERR</span>
                         <p class="text-body">
-                            Started studing <strong>Information Technology</strong> at National Open University of Nigeria.
+                            Check out and purchase some of my gigs on <br> <a href="www.fiver.com">fiverr.</a>
                         </p>
-                        <h4 class="service-date">2018 - PRESENT</h4>
+                    </span>
+                    
+                    <span class="hire-rows">
+                        <span>E-MAIL</span>
+                        <p class="text-body">
+                            Send me an Email at <a href="#">ifakaprecious43@gmail.com.</a>
+                        </p>
+                    </span>
+
+                    <span class="hire-rows">
+                        <span>FACEBOOK</span>
+                        <p class="text-body hire-facebook">
+                            You can also send me a message on <a href="https://web.facebook.com/profile.php?id=100018896417862" target="blank" class="fb"><br>
+                                <i class="fab fa-facebook-square"></i>
+                                </a>
+                        </p>
                     </span>
                 </div>
 
             </div>
 
             <footer class="footer">
-                <p class="footer-text">This website is designed and developed by Precious Newssy.</p>
+                <p class="footer-text">Designed by Precious Newssy.</p>
                 <p class="copyright">Copyright &copy; <span id="currentDate"></span> </p>
             </footer>
         </div>
