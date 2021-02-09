@@ -209,6 +209,7 @@ html{
     top: 30%;
     width: 100%;
 }
+
 .landing-body .hi{
     font-size: 0.8em;
 }
@@ -265,7 +266,7 @@ html{
     position: absolute;
     width: 100%;
     left: 0%;
-
+    transform: 3s rotate(-360deg);
 }
 .social-icons a{
     text-decoration: none;
@@ -736,9 +737,6 @@ html{
         margin: 1% 0 1% 0;
         width: 70%;
     }
-    .landing-body{
-        margin-right: 9%;
-    }
     .large{
         font-size: 25px;
         margin: 5% 0% 5% 0%;
@@ -749,7 +747,6 @@ html{
     }
     .social-icons{
         font-size: 20px;
-        margin-left: 5%;
     }
     .about{
         padding: 5% 10% 5% 10%;
