@@ -49,7 +49,8 @@
 body{
     margin: 0;
     box-sizing: border-box;
-    background-color: rgb(0, 0, 32);
+    background: url('../images/black.jpg') no-repeat fixed;
+    background-size: cover;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
 }
@@ -266,11 +267,17 @@ html{
     position: absolute;
     width: 100%;
     left: 0%;
-    transform: 3s rotate(-360deg);
 }
 .social-icons a{
     text-decoration: none;
     margin: 10% 2% 0 2%;
+}
+.social-icons i:hover{
+    transform: rotate(360deg);
+    transition: .3s;
+}
+.social-icons a:hover{
+    transform: rotate(360deg);
     transition: .3s;
 }
 .social-icons .fb i{
@@ -556,6 +563,12 @@ html{
     font-size: 25px;
     margin-left: 1%;
     color: rgb(30, 81, 252);
+    text-decoration: none;
+}
+.hire-facebook i:hover{
+    text-decoration: none;
+    transform: rotate(360deg);
+    transition: .3s;
 }
 /*Hire Section End*/
 
