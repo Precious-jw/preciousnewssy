@@ -311,7 +311,6 @@ html{
     font-size: 130%;
     color: white;
     background-color: rgba(24, 24, 24, 0.904);
-    box-shadow: 0px 0px 2px 1px rgb(75, 75, 75);
     position: fixed;
     z-index: 1;
     right: 2%;
@@ -322,7 +321,6 @@ html{
 }
 .scroll:hover{
     background-color: rgb(24, 24, 24);
-    box-shadow: 0px 0px 4px 1px rgb(75, 75, 75);
     transition: .4s;
     bottom: 3%;
 }
@@ -356,6 +354,9 @@ html{
     padding: 5%;
     padding: 5% 20% 5% 20%;
 }
+.about-header{
+    border-bottom: 0.3rem solid rgb(83, 83, 83);
+}
 .about-body{
     line-height: 30px;
 }
@@ -365,8 +366,7 @@ html{
     margin-right: auto;
     width: max-content;
     font-weight: bold;
-    padding: 20px;
-    box-shadow: 0px 0px 5px 1px rgb(190, 190, 190);
+    padding: 20px 0px;
 }
 .about-text-lg{
     font-size: 1.2em;
@@ -393,28 +393,10 @@ html{
     width: max-content;
     margin: 0 20px 30px 20px;
 }
-.skill-html{
+.skill{
     display: flex;
 }
-.html-percent{
-    margin-left: auto;
-}
-.skill-css{
-    display: flex;
-}
-.css-percent{
-    margin-left: auto;
-}
-.skill-js{
-    display: flex;
-}
-.js-percent{
-    margin-left: auto;
-}
-.skill-php{
-    display: flex;
-}
-.php-percent{
+.percent{
     margin-left: auto;
 }
 /*-- About Section End --*/
@@ -430,6 +412,7 @@ html{
 }
 .education-header{
     color: white;
+    border-bottom: 0.3rem solid white;
 }
 .education-text{
     margin-top: 2%;
@@ -474,8 +457,8 @@ html{
     margin-left: auto;
     margin-right: auto;
     width: max-content;
-    padding: 20px;
-    box-shadow: 0px 0px 5px 1px rgb(75, 75, 75);
+    padding: 20px 0px;
+    border-bottom: 0.3rem solid rgb(83, 83, 83);
 }
 .services-sub{
     font-style: italic;
@@ -492,7 +475,8 @@ html{
     padding: 0 2%;
 }
 .services-rows{
-    border: 2px dashed grey;
+    background: rgba(255, 255, 255);
+    border: 2px solid grey;
     display: flex;
     width: 48%;
     padding: 4% 0 4% 0;
@@ -501,8 +485,7 @@ html{
     transition: .5s;
 }
 .services-rows:hover{
-    border: 2px solid grey;
-    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 10px 0.5px rgb(158, 158, 158);
     transition: .5s;
 }
 .services-row-2{
@@ -523,12 +506,16 @@ html{
     bottom: 0;
     margin: 0px;
 }
+
+.hire a{
+    text-decoration: none;
+}
 .hire-header{
     margin-left: auto;
     margin-right: auto;
     width: max-content;
-    padding: 20px;
-    box-shadow: 0px 0px 5px 1px rgb(75, 75, 75);
+    padding: 20px 0px;
+    border-bottom: 0.3rem solid rgb(207, 207, 207);
 }
 .hire-sub{
     font-style: italic;
@@ -560,13 +547,23 @@ html{
     border-radius: 9px 9px 0 0;
 }
 .hire-facebook i{
-    font-size: 25px;
-    margin-left: 1%;
+    font-size: 27px;    
     color: rgb(30, 81, 252);
     text-decoration: none;
 }
 .hire-facebook i:hover{
-    text-decoration: none;
+    border: 0px;
+    transform: rotate(360deg);
+    transition: .3s;
+}
+.hire-wa img{
+    height: 35px;
+    width: 35px;
+    margin-left: 1%;
+    color:rgb(7, 163, 59);
+}
+.hire-wa img:hover{
+    border: 0px;
     transform: rotate(360deg);
     transition: .3s;
 }
